@@ -1,0 +1,18 @@
+DROP DATABASE IF EXISTS `sistema`;
+
+CREATE DATABASE IF NOT EXISTS `sistema` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `sistema`;
+
+DROP TABLE IF EXISTS `aluno`;
+
+CREATE TABLE `aluno` (
+	id int NOT NULL AUTO_INCREMENT,
+	nome VARCHAR(20) DEFAULT NULL,
+	curso VARCHAR(30) DEFAULT NULL,
+    dataN VARCHAR(30) DEFAULT NULL,
+    PRIMARY KEY(`id`)
+);
+
+INSERT INTO aluno (nome, curso, dataN) VALUES ('Julia', 'Engenharia', '22/04/1996');
+
+
